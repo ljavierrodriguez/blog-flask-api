@@ -15,7 +15,7 @@ def login():
         if not username:
             return jsonify({ "error": "Field (username) is requred"}), 400
         if not password:
-            return jsonify({ "error": "Field (username) is requred"}), 400
+            return jsonify({ "error": "Field (password) is requred"}), 400
         
         user = User.query.filter_by(username=username).first()
 

@@ -45,6 +45,7 @@ class Post(db.Model):
             "title": self.title,
             "resume": self.resume,
             "content": self.content,
+            "user_id": self.user_id,
             "author": self.user.username
         }
     
